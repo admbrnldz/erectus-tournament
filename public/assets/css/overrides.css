@@ -1,0 +1,124 @@
+body{
+	color: #5a5a5a;
+}
+
+/*carousel*/
+.carousel {
+	height: 672px;
+	margin-bottom: 60px;
+	position: relative;
+}
+
+.caption-title {
+	font-family: 'slayer';
+}
+.interUlogo {
+	width: 100%;
+}
+
+.slider1 {background: url(../images/fold1-1.jpg);}
+.slider2 {background: url(../images/fold2.jpg);}
+.slider3 {background: url(../images/fold3.jpg);}
+.slider-size {
+	width: 100%;
+	height: 672px;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+/*end carousel*/
+
+/*navbar*/
+.navbar-inverse {
+	background: rgba(0,0,0, .8);
+}
+.navbar-wrapper {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 20;
+}
+.navbar-wrapper .navbar .container {
+	width: auto;
+}
+.brand-logo {
+	height: 50px;
+	padding: 5px;
+}
+.navbar-brand,
+.navbar-nav li a {
+	height: 50px;
+	line-height: 50px;
+	padding: 0 25px;
+}
+.navbar-inverse .navbar-nav>li>a, 
+.navbar-inverse .navbar-nav>li>a:focus{
+	color: #fff;
+	font-weight: bold;
+}
+.navbar-inverse .navbar-toggle {
+	margin-top: 20px;
+	border-color: #ec971f;
+}
+.navbar-inverse .navbar-toggle:hover,
+.navbar-inverse .navbar-toggle:focus {
+	background: none;
+	border-color: #ec971f;
+}
+.navbar-inverse .navbar-nav>li>a:hover,
+.navbar-inverse .navbar-nav>.open>a, 
+.navbar-inverse .navbar-nav>.open>a:focus, 
+.navbar-inverse .navbar-nav>.open>a:hover {
+	color: #ec971f;
+} 
+.navbar-inverse .navbar-nav>.active>a, 
+.navbar-inverse .navbar-nav>.active>a:hover, 
+.navbar-inverse .navbar-nav>.active>a:focus {
+	border-bottom: 4px solid #ec971f;
+	background: rgba(0,0,0,1);
+	color: #ec971f;
+}
+/*end navbar*/
+
+/*section 2 screenshots*/
+.screenshots .col-lg-3 {
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 20px;
+	height: 500px;
+	border: 1px solid #eeeeee;
+}
+
+.img-circle {
+	width: 200px;
+}
+
+
+
+
+
+
+/*=========================================================================================================*/
+/*media*/
+@media (min-width: 768px) {
+	.navbar-wrapper {
+	    margin-top: 20px;
+	}
+
+	.screenshots .col-lg-3:hover {
+		box-shadow: 0px 6px 24px -4px;
+		transition-duration: .5s;
+		cursor: pointer;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel,
+	.slider-size {
+		height: 500px;
+	}
+	.carousel-caption {
+		line-height: 20px;
+	}
+}
